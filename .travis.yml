@@ -1,0 +1,11 @@
+language: julia
+os:
+  - linux
+julia:
+  - 0.4
+notifications:
+  email: true
+# uncomment the following lines to override the default test script
+#script:
+#  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+#  - julia --check-bounds=yes -e 'Pkg.clone(pwd()); Pkg.build("Equations"); Pkg.test("Equations"; coverage=true)'
